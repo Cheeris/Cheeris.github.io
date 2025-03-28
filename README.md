@@ -200,6 +200,36 @@
 </details>
 
 <details>
+  <summary>橙花 (Orange Blossom)</summary>
+    - 30ml 金酒  
+    - 15ml 君度  
+    - 10ml 青柠汁
+    - 60ml 橙汁
+    - 5ml 红石榴糖浆 
+    - Shake
+</details>
+
+<details>
+  <summary>特别的人 (Special Person)</summary>
+    - 20ml 金酒  
+    - 20ml 朗姆 
+    - 20ml 柠檬汁
+    - 100ml 养乐多
+    - 10ml 红石榴糖浆 
+    - Shake
+</details>
+
+<details>
+  <summary>金苹果 (Golden Apple)</summary>
+    - 30ml 金酒  
+    - 15ml 君度
+    - 15ml 柠檬汁
+    - 120ml 苹果汁
+    - 气泡水布满
+    - Stir
+</details>
+
+<details>
   <summary>💪 拉莫斯金菲士 (Ramos Gin Fizz)</summary>
     - 60ml 金酒  
     - 15ml 柠檬汁  
@@ -238,7 +268,16 @@
     - Stir  
 </details>
 
-## 🌟 特色特调
+<details>
+  <summary>破冰船 (Ice Breaker)</summary>
+    - 45ml 龙舌兰  
+    - 10ml 君度  
+    - 30ml 葡萄柚子汁  
+    - 5ml 红石榴糖浆  
+    - Shake 
+</details>
+
+## 🌟 其他基酒
 
 <details>
   <summary>🌟 高潮 (Orgasm)</summary>
