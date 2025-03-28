@@ -1,6 +1,13 @@
 # 🍸 芝士酒单
 
-## 1. 🥃 威士忌基酒
+- [威士忌基酒](#-威士忌基酒)
+- [朗姆酒基酒](#-朗姆酒基酒)
+- [伏特加基酒](#-伏特加基酒)
+- [金酒基酒](#-金酒基酒)
+- [龙舌兰基酒](#-龙舌兰基酒)
+- [特色特调](#-特色特调)
+
+## 🥃 威士忌基酒
 
 <details>
   <summary>嗨棒 (Highball)</summary>
@@ -54,7 +61,7 @@
   - **调制方法**：先摇匀 (Shake)，再搅拌 (Stir)  
 </details>
 
-## 2. 🍹 朗姆酒基酒
+## 🍹 朗姆酒基酒
 
 <details>
   <summary>戴克利 (Daiquiri)</summary>
@@ -129,7 +136,7 @@
     - 奶盖，开心果碎装饰  
 </details>
 
-## 3. 🍸 伏特加基酒
+## 🍸 伏特加基酒
 
 <details>
   <summary>冰与火之歌 (Game of Ice and Fire)</summary>
@@ -156,7 +163,7 @@
     - Stir，可加薄荷装饰  
 </details>
 
-## 4. 🍶 金酒基酒
+## 🍶 金酒基酒
 
 <details>
   <summary>金汤力 (Gin & Tonic)</summary>
@@ -203,7 +210,7 @@
     - 苏打水补满，直到泡沫浮起  
 </details>
 
-## 5. 🌵 龙舌兰基酒
+## 🌵 龙舌兰基酒
 
 <details>
   <summary>龙舌兰日出 (Tequila Sunrise)</summary>：
@@ -230,7 +237,7 @@
     - Stir  
 </details>
 
-## 6. 🌟 特色特调
+## 🌟 特色特调
 
 <details>
   <summary>🌟 高潮 (Orgasm)</summary>
