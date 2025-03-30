@@ -21,69 +21,109 @@
             <button class="btn btn-outline-primary filter-btn" data-filter="甜">甜味</button>
             <button class="btn btn-outline-primary filter-btn" data-filter="苦">苦味</button>
             <button class="btn btn-outline-primary filter-btn" data-filter="烈">烈性</button>
-            <button class="btn btn-outline-primary filter-btn" data-filter="清爽">清爽</button>
-            <button class="btn btn-outline-primary filter-btn" data-filter="奶油">奶油</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="清">清爽</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="奶">奶味</button>
         </div>
 
         <!-- 酒单显示区域 -->
         <div id="cocktailMenu" class="row">
             <!-- 鸡尾酒项（每个酒都定义风味属性） -->
-            <div class="col-md-4 cocktail-item 酸">
+            <div class="col-md-4 cocktail-item 清">
                 <div class="card">
-                    <img src="whiskey_sour.jpg" class="card-img-top" alt="威士忌酸">
+                    <img src="/Images/highball.webp" class="card-img-top" alt="嗨棒">
+                    <div class="card-body">
+                        <h5 class="card-title">嗨棒 (HighBall)</h5>
+                        <p class="card-text">清爽型:5/5 烈性:3/5 甜味:2/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜 清">
+                <div class="card">
+                    <img src="/Images/可乐桶.jpg" class="card-img-top" alt="可乐桶">
+                    <div class="card-body">
+                        <h5 class="card-title">可乐桶</h5>
+                        <p class="card-text">清爽型:5/5 烈性:2/5 甜味:5/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜 烈">
+                <div class="card">
+                    <img src="/Images/第八区.webp" class="card-img-top" alt="第八区">
+                    <div class="card-body">
+                        <h5 class="card-title">第八区 (Ward 8)</h5>
+                        <p class="card-text">酸味:3/5 烈性:3/5 甜味:3/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜 奶">
+                <div class="card">
+                    <img src="/Images/迷雾.png" class="card-img-top" alt="迷雾">
+                    <div class="card-body">
+                        <h5 class="card-title">迷雾 (Mist)</h5>
+                        <p class="card-text">甜味:4/5 烈性:2/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 酸 烈">
+                <div class="card">
+                    <img src="/Images/威士忌酸.webp" class="card-img-top" alt="威士忌酸">
                     <div class="card-body">
                         <h5 class="card-title">🌟 威士忌酸 (Whiskey Sour)</h5>
-                        <p class="card-text">60ml 威士忌, 30ml 柠檬汁, 15ml 糖浆, 蛋清</p>
+                        <p class="card-text">酸味:4/5 烈性:3/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 清">
+                <div class="card">
+                    <img src="/Images/JohnCollins.webp" class="card-img-top" alt="约翰柯林斯">
+                    <div class="card-body">
+                        <h5 class="card-title">约翰柯林斯 (John Collins)</h5>
+                        <p class="card-text">清爽型:5/5 甜味:3/5 酸味:3/5 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 烈 酸">
+                <div class="card">
+                    <img src="/Images/Daiquiri.webp" class="card-img-top" alt="戴克利">
+                    <div class="card-body">
+                        <h5 class="card-title">戴克利 (Daiquiri)</h5>
+                        <p class="card-text">清爽型:4/5 烈性:4/5 甜味:3/5</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 cocktail-item 甜">
                 <div class="card">
-                    <img src="pina_colada.jpg" class="card-img-top" alt="皮纳科拉达">
+                    <img src="/Images/CubaLibre.jpg" class="card-img-top" alt="自由古巴">
                     <div class="card-body">
-                        <h5 class="card-title">皮纳科拉达 (Piña Colada)</h5>
-                        <p class="card-text">50ml 朗姆, 30ml 椰奶, 30ml 菠萝汁</p>
+                        <h5 class="card-title">自由古巴 (Cuba Libre)</h5>
+                        <p class="card-text">甜味:4/5 烈性:2/5 </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 cocktail-item 苦">
+            <div class="col-md-4 cocktail-item 清">
                 <div class="card">
-                    <img src="negroni.jpg" class="card-img-top" alt="内格罗尼">
-                    <div class="card-body">
-                        <h5 class="card-title">内格罗尼 (Negroni)</h5>
-                        <p class="card-text">30ml 金酒, 30ml 红味美思, 30ml 苦艾酒</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 cocktail-item 烈">
-                <div class="card">
-                    <img src="long_island_iced_tea.jpg" class="card-img-top" alt="长岛冰茶">
-                    <div class="card-body">
-                        <h5 class="card-title">长岛冰茶 (Long Island Iced Tea)</h5>
-                        <p class="card-text">15ml 伏特加, 15ml 朗姆, 15ml 龙舌兰, 15ml 金酒, 15ml 橙酒</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 cocktail-item 清爽">
-                <div class="card">
-                    <img src="mojito.jpg" class="card-img-top" alt="莫吉托">
+                    <img src="/Images/mojito.webp" class="card-img-top" alt="莫吉托">
                     <div class="card-body">
                         <h5 class="card-title">莫吉托 (Mojito)</h5>
-                        <p class="card-text">50ml 朗姆, 30ml 青柠汁, 10ml 糖浆, 薄荷叶</p>
+                        <p class="card-text">清爽型:5/5 甜味:3/5</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4 cocktail-item 奶油">
+            <div class="col-md-4 cocktail-item 甜">
                 <div class="card">
-                    <img src="white_russian.jpg" class="card-img-top" alt="白俄罗斯">
+                    <img src="/Images/painkiller.webp" class="card-img-top" alt="止痛药">
                     <div class="card-body">
-                        <h5 class="card-title">白俄罗斯 (White Russian)</h5>
-                        <p class="card-text">50ml 伏特加, 30ml 咖啡利口酒, 30ml 奶油</p>
+                        <h5 class="card-title">止痛药 (PainKiller)</h5>
+                        <p class="card-text">甜味:5/5 烈性:2/5</p>
                     </div>
                 </div>
             </div>
