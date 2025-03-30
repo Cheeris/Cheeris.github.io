@@ -1,26 +1,34 @@
-// 等待 DOM 内容加载完成后再执行代码
-document.addEventListener("DOMContentLoaded", function () {
-    // 获取所有的筛选按钮
+document.addEventListener('DOMContentLoaded', function() {
+    const grid = document.querySelector('#cocktailMenu');
+
+    // 初始化 Isotope
+    const iso = new Isotope(grid, {
+        itemSelector: '.cocktail-item', // 选择要布局的元素
+        layoutMode: 'masonry',         // 使用 Masonry 布局
+        masonry: {
+            columnWidth: 20, // 列宽
+            gutter: 20                    // 间距
+        },
+        percentPosition: true            // 使用百分比布局
+    });
+
+    // 确保图片加载完成后再布局
+    imagesLoaded(grid, function() {
+        iso.layout();
+    });
+
+    // 筛选按钮事件
     const filterButtons = document.querySelectorAll('.filter-btn');
-    
-    // 获取所有酒品项
-    const cocktailItems = document.querySelectorAll('.cocktail-item');
-    
-    // 添加点击事件监听器
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-            console.log("Clicked");
-            // 根据筛选条件显示或隐藏酒品
-            cocktailItems.forEach(item => {
-                if (filter === 'all') {
-                    item.style.display = 'block'; // 显示所有酒品
-                } else if (item.classList.contains(filter)) {
-                    item.style.display = 'block'; // 显示匹配分类的酒品
-                } else {
-                    item.style.display = 'none'; // 隐藏不匹配的酒品
-                }
+            const filterValue = this.getAttribute('data-filter');
+            iso.arrange({
+                filter: filterValue === 'all' ? '*' : '.' + filterValue
             });
+
+            // 可选：更新按钮的 active 状态
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
         });
     });
 });

@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="styles.css"> <!-- 引入外部 CSS 文件 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js" defer></script> <!-- 引入外部 JS 文件 -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 </head>
 <body>
 
     <div class="container mt-5">
-        <h1 class="text-center text-danger mb-5">🍸 鸡尾酒酒单</h1>
+        <h1 class="text-center text-danger mb-5">🍸 Cheese Cocktail Menu</h1>
 
         <!-- 筛选按钮 -->
         <div class="d-flex justify-content-center mb-4">
@@ -33,7 +35,7 @@
                     <img src="/Images/highball.webp" class="card-img-top" alt="嗨棒">
                     <div class="card-body">
                         <h5 class="card-title">嗨棒 (HighBall)</h5>
-                        <p class="card-text">清爽型:5/5 烈性:3/5 甜味:2/5</p>
+                        <p class="card-text">清爽:5/5 烈性:3/5 甜味:2/5</p>
                     </div>
                 </div>
             </div>
@@ -43,7 +45,7 @@
                     <img src="/Images/可乐桶.jpg" class="card-img-top" alt="可乐桶">
                     <div class="card-body">
                         <h5 class="card-title">可乐桶</h5>
-                        <p class="card-text">清爽型:5/5 烈性:2/5 甜味:5/5</p>
+                        <p class="card-text">清爽:5/5 烈性:2/5 甜味:5/5</p>
                     </div>
                 </div>
             </div>
@@ -83,7 +85,7 @@
                     <img src="/Images/JohnCollins.webp" class="card-img-top" alt="约翰柯林斯">
                     <div class="card-body">
                         <h5 class="card-title">约翰柯林斯 (John Collins)</h5>
-                        <p class="card-text">清爽型:5/5 甜味:3/5 酸味:3/5 </p>
+                        <p class="card-text">清爽:5/5 甜味:3/5 酸味:3/5 </p>
                     </div>
                 </div>
             </div>
@@ -93,7 +95,7 @@
                     <img src="/Images/Daiquiri.webp" class="card-img-top" alt="戴克利">
                     <div class="card-body">
                         <h5 class="card-title">戴克利 (Daiquiri)</h5>
-                        <p class="card-text">清爽型:4/5 烈性:4/5 甜味:3/5</p>
+                        <p class="card-text">清爽:4/5 烈性:4/5 甜味:3/5</p>
                     </div>
                 </div>
             </div>
@@ -113,7 +115,7 @@
                     <img src="/Images/mojito.webp" class="card-img-top" alt="莫吉托">
                     <div class="card-body">
                         <h5 class="card-title">莫吉托 (Mojito)</h5>
-                        <p class="card-text">清爽型:5/5 甜味:3/5</p>
+                        <p class="card-text">清爽:5/5 甜味:3/5</p>
                     </div>
                 </div>
             </div>
@@ -127,6 +129,217 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4 cocktail-item 甜">
+                <div class="card">
+                    <img src="/Images/落日飞车.webp" class="card-img-top" alt="落日飞车">
+                    <div class="card-body">
+                        <h5 class="card-title">落日飞车 (Sunset Rollercoaster)</h5>
+                        <p class="card-text">甜味:5/5 烈性:2/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜">
+                <div class="card">
+                    <img src="/Images/冰与火.webp" class="card-img-top" alt="冰与火之歌">
+                    <div class="card-body">
+                        <h5 class="card-title">冰与火之歌 (The Song of Ice and Fire)</h5>
+                        <p class="card-text">甜味:4/5 烈性:2/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜 清">
+                <div class="card">
+                    <img src="/Images/Moscow.webp" class="card-img-top" alt="莫斯科骡子">
+                    <div class="card-body">
+                        <h5 class="card-title">莫斯科骡子 (Moscow Mule)</h5>
+                        <p class="card-text">清爽:5/5 甜味:4/5 烈性:3/5 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜">
+                <div class="card">
+                    <img src="/Images/螺丝起子.webp" class="card-img-top" alt="螺丝起子">
+                    <div class="card-body">
+                        <h5 class="card-title">螺丝起子 (Screwdriver)</h5>
+                        <p class="card-text">清爽:4/5 甜味:4/5 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 清">
+                <div class="card">
+                    <img src="/Images/gintonic.jpg" class="card-img-top" alt="金汤力">
+                    <div class="card-body">
+                        <h5 class="card-title">金汤力 (Gin Tonic)</h5>
+                        <p class="card-text">清爽:5/5 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 清 烈">
+                <div class="card">
+                    <img src="/Images/gimlet.webp" class="card-img-top" alt="琴蕾">
+                    <div class="card-body">
+                        <h5 class="card-title">琴蕾 (Gimlet)</h5>
+                        <p class="card-text">酸味:4/5 烈性:3/5 甜味:3/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 清 酸">
+                <div class="card">
+                    <img src="/Images/ginfizz.webp" class="card-img-top" alt="金菲士">
+                    <div class="card-body">
+                        <h5 class="card-title">金菲士 (Gin Fizz)</h5>
+                        <p class="card-text">清爽:5/5 酸味:4/5 甜味:3/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 烈 酸">
+                <div class="card">
+                    <img src="/Images/whitelady.webp" class="card-img-top" alt="白色佳人">
+                    <div class="card-body">
+                        <h5 class="card-title">白色恋人 (White Lady)</h5>
+                        <p class="card-text">烈性:4/5 酸味:4/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜">
+                <div class="card">
+                    <img src="/Images/龙舌兰日出.webp" class="card-img-top" alt="龙舌兰日出">
+                    <div class="card-body">
+                        <h5 class="card-title">龙舌兰日出 (Tequila Sunrise)</h5>
+                        <p class="card-text">甜味:5/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 烈 酸">
+                <div class="card">
+                    <img src="/Images/Margarita.webp" class="card-img-top" alt="玛格丽特">
+                    <div class="card-body">
+                        <h5 class="card-title">玛格丽特 (Margarita)</h5>
+                        <p class="card-text">烈性:4/5 酸味:4/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜">
+                <div class="card">
+                    <img src="/Images/BeesKnees.jpg" class="card-img-top" alt="蜂之膝">
+                    <div class="card-body">
+                        <h5 class="card-title">蜂之膝 (Bee's Knees)</h5>
+                        <p class="card-text">甜味:4/5 烈性:3/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜 奶">
+                <div class="card">
+                    <img src="/Images/climax.webp" class="card-img-top" alt="高潮">
+                    <div class="card-body">
+                        <h5 class="card-title">高潮 (Climax)</h5>
+                        <p class="card-text">甜味:5/5 奶味:4/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜 奶">
+                <div class="card">
+                    <img src="/Images/孤岛.webp" class="card-img-top" alt="孤岛">
+                    <div class="card-body">
+                        <h5 class="card-title">孤岛 (Island)</h5>
+                        <p class="card-text">甜味:5/5 奶味:5/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 清 奶">
+                <div class="card">
+                    <img src="/Images/ramosGinFizz.jpg" class="card-img-top" alt="拉莫斯金菲士">
+                    <div class="card-body">
+                        <h5 class="card-title">拉莫斯金菲士 (Ramos Gin Gizz)</h5>
+                        <p class="card-text">清爽:5/5 奶味:4/5 酸味:3/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 清 甜">
+                <div class="card">
+                    <img src="/Images/龙舌兰炸弹.webp" class="card-img-top" alt="龙舌兰炸弹">
+                    <div class="card-body">
+                        <h5 class="card-title">龙舌兰炸弹 (Tequila Slammer)</h5>
+                        <p class="card-text">清爽:5/5 甜味:4/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 奶 甜">
+                <div class="card">
+                    <img src="/Images/伯牙绝弦.webp" class="card-img-top" alt="伯牙绝弦">
+                    <div class="card-body">
+                        <h5 class="card-title">伯牙绝弦</h5>
+                        <p class="card-text">奶味:5/5 甜味:4/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 奶 甜">
+                <div class="card">
+                    <img src="/Images/椰子奶糖.jpg" class="card-img-top" alt="椰子奶糖">
+                    <div class="card-body">
+                        <h5 class="card-title">椰子奶糖</h5>
+                        <p class="card-text">奶味:5/5 甜味:4/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜">
+                <div class="card">
+                    <img src="/Images/橙花.webp" class="card-img-top" alt="橙花">
+                    <div class="card-body">
+                        <h5 class="card-title">橙花 (Orange Blossom)</h5>
+                        <p class="card-text">甜味:4/5 烈性:2/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜 奶">
+                <div class="card">
+                    <img src="/Images/specialperson.webp" class="card-img-top" alt="特别的人">
+                    <div class="card-body">
+                        <h5 class="card-title">特别的人 (Special Person)</h5>
+                        <p class="card-text">甜味:4/5 奶味:4/5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 甜 清">
+                <div class="card">
+                    <img src="/Images/GoldenApple.webp" class="card-img-top" alt="金苹果">
+                    <div class="card-body">
+                        <h5 class="card-title">金苹果 (Golden Apple)</h5>
+                        <p class="card-text">清爽: 5/5 甜味:4/5 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 cocktail-item 酸 清>
+                <div class="card">
+                    <img src="/Images/icebreaker.webp" class="card-img-top" alt="破冰船">
+                    <div class="card-body">
+                        <h5 class="card-title">破冰船 (Ice Breaker)</h5>
+                        <p class="card-text">清爽: 4/5 甜味:4/5</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
