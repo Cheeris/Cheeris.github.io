@@ -14,7 +14,11 @@
     "antd": "^5.28.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.5"
+    "react-router-dom": "^7.9.5",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "rehype-highlight": "^7.0.0",
+    "highlight.js": "^11.10.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

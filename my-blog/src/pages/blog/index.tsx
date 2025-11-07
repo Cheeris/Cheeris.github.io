@@ -1,12 +1,11 @@
 import React from 'react';
 
-const BlogPage: React.FC = () => {
+const DefaultBlogPage: React.FC = () => {
   return (
     <div>
-      <h1>博客文章</h1>
-      <p>这里可以显示你的博客文章列表。</p>
+      <h1>选择一篇博客吧</h1>
     </div>
   );
 }
 
-export default BlogPage;
+export default DefaultBlogPage;

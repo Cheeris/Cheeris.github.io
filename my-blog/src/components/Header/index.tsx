@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Layout, Menu, type MenuProps} from 'antd';
-import {routes} from '../../routes';
+import {routes} from '../../configs/routeConfig';
 
 const {Header} = Layout;
 
