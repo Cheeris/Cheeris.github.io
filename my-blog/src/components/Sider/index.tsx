@@ -7,8 +7,8 @@ const {Sider} = Layout;
 
 const items: MenuProps['items'] = blogConfig.map((item) => ({
     key: item.location,
-    icon: React.createElement(UserOutlined),
-    label: item.location,
+    icon: React.createElement(NotificationOutlined),
+    label: item.label,
 }));
 
 const BlogSider: React.FC = () => {

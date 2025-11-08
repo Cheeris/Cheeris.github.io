@@ -13,7 +13,7 @@ const BlogPage: React.FC<BlogProps> = (props: BlogProps) => {
         // import(`../../posts/${props.path}`).then((res)=>{
         //     ;
         // })
-        fetch(`../../posts/${props.path}`).then((res)=>res.text()).then((text)=>setContent(text))
+        fetch(`/posts/${props.path}`).then((res)=>res.text()).then((text)=>setContent(text))
         .catch((err)=>{
             console.log(err);
         })
