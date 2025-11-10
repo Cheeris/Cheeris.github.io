@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { useAppStore } from '../../stores';
 
 export interface BlogProps {
   path: string;
@@ -8,11 +9,9 @@ export interface BlogProps {
 
 const BlogPage: React.FC<BlogProps> = (props: BlogProps) => {
     const [content, setContent] = useState<string>("");
+
     useEffect(()=>{
-        // debugger;
-        // import(`../../posts/${props.path}`).then((res)=>{
-        //     ;
-        // })
+
         fetch(`/posts/${props.path}`).then((res)=>res.text()).then((text)=>setContent(text))
         .catch((err)=>{
             console.log(err);

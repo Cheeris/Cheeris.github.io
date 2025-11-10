@@ -1,6 +1,8 @@
 import React from 'react';
+import { useAppStore } from '../../stores';
 
 const AboutPage: React.FC = () => {
+  
   return (
     <div>
       <h1>关于我</h1>

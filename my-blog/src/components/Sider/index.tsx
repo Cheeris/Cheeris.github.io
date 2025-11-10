@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Layout, Menu, type MenuProps} from 'antd';
 import {blogConfig} from '../../configs/blogConfig';
 import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
-
+import { useNavigate } from 'react-router-dom'; 
 const {Sider} = Layout;
 
 const items: MenuProps['items'] = blogConfig.map((item) => ({
@@ -12,6 +12,7 @@ const items: MenuProps['items'] = blogConfig.map((item) => ({
 }));
 
 const BlogSider: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <Sider
       style={{
@@ -25,7 +26,7 @@ const BlogSider: React.FC = () => {
         items={items}
         style={{ height: '100%', borderRight: 0 }}
         onClick={({key})=>{
-            window.location.href = key;
+            navigate(key);
         }}
       />
     </Sider>

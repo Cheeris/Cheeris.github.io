@@ -1,4 +1,5 @@
 import React from 'react';
+import { useAppStore } from '../../stores';
 
 const HomePage: React.FC = () => {
   return (
